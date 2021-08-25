@@ -1,0 +1,194 @@
+:root{
+    --primary-color : #e50914;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    -web-font-smoothing: antialiased;
+    background: #000;
+    color: #999;
+}
+ul{
+    list-style: none;
+
+}
+
+h1, h2, h3, h4{
+    color: #fff;
+  
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+p{
+    margin: 0.5rem 0;
+}
+img{
+    width: 100%;
+} 
+
+.showcase{
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url(./images/background.jpg) no-repeat center center/cover;
+
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+.showcase-top{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+
+}
+
+.showcase-top img{
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.showcase-top button{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+}
+
+.showcase-content{
+position: relative;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 9rem;
+z-index: 2;
+
+}
+
+.showcase-content h1{
+font-weight: 700;
+font-size: 5.2rem;
+line-height: 1.1;
+margin: 0 0 2rem;
+
+}
+
+.showcase-content p{
+text-transform: uppercase;
+color: #fff;
+font-weight: 400;
+font-size: 1.9rem;
+line-height: 1.25;
+margin: 0 0 2rem;
+}
+
+.showcase::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(0, 0,0 , 0.6);
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+
+}
+
+.tabs{
+    background: grey;
+ 
+}
+#tab-1-content.tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.img1 img{
+width: 50%;
+
+}
+.text-lg{
+    font-size: 2rem;
+
+}
+
+
+.footer {
+	max-width: 70%;
+	margin: 1rem auto;
+	overflow: auto;
+}
+
+.footer,
+.footer a {
+	color: #999;
+	font-size: 0.9rem;
+}
+
+.footer p {
+	margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.footer li {
+	line-height: 1.9;
+}
+
+.footer .lang-select {
+	
+	color: #999;
+	background-color: #000;
+	background-image: none;
+	border: 1px solid #333;
+	padding: 1rem 1.2rem;
+	border-radius: 5px;
+}
+
+
+@media(max-width:90px){
+    .showcase{
+        height: 70vh;
+    }
+    .hide-sm{
+        display: none;
+    }
+    .showcase-top img{
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+    }
+    .showcase-content h1{
+        font-size: 3.7rem;
+        line-height: 1;
+    }
+    .showcase-content p{
+        font-size: 1.5rem;
+
+    }
+    .btn-xl {
+        font-size: 1.5rem;
+        padding: 1.4rem 2rem
+
+    }
+
+}
